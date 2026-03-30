@@ -1,0 +1,68 @@
+<!-- wp:template-part {"slug":"header","theme":"Supersmashbros"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","right":"var:preset|spacing|l","bottom":"var:preset|spacing|3xl","left":"var:preset|spacing|l"},"blockGap":"var:preset|spacing|xl"}},"backgroundColor":"gris-fonce","layout":{"type":"constrained"}} -->
+<main class="wp-block-group has-gris-fonce-background-color has-background"
+	style="padding-top:var(--wp--preset--spacing--xl);padding-right:var(--wp--preset--spacing--l);padding-bottom:var(--wp--preset--spacing--3-xl);padding-left:var(--wp--preset--spacing--l)">
+	<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|s"}},"layout":{"type":"constrained"}} -->
+	<div class="wp-block-group alignwide"><!-- wp:woocommerce/breadcrumbs {"fontSize":"xs","textColor":"blanc"} /-->
+
+		<!-- wp:query-title {"type":"archive","showPrefix":false,"align":"wide","style":{"typography":{"fontWeight":"900","textTransform":"uppercase","letterSpacing":"-0.03em","lineHeight":"0.95"},"spacing":{"margin":{"bottom":"var:preset|spacing|s"}}},"textColor":"blanc","fontSize":"2xl","fontFamily":"roboto-condensed"} /-->
+
+		<!-- wp:term-description {"align":"wide","textColor":"blanc","fontSize":"s"} /-->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:woocommerce/store-notices /-->
+
+	<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|s","bottom":"var:preset|spacing|s"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+	<div class="wp-block-group alignwide"
+		style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--s);padding-bottom:var(--wp--preset--spacing--s)">
+		<!-- wp:woocommerce/product-results-count {"style":{"typography":{"textTransform":"uppercase","fontWeight":"700","letterSpacing":"0.03em"}},"textColor":"blanc","fontSize":"xs"} /-->
+
+		<!-- wp:woocommerce/catalog-sorting /-->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:woocommerce/product-collection {"queryId":0,"query":{"woocommerceAttributes":[],"woocommerceStockStatus":["instock","outofstock","onbackorder"],"taxQuery":[],"isProductCollectionBlock":true,"perPage":9,"pages":0,"offset":0,"postType":"product","order":"asc","orderBy":"title","author":"","search":"","exclude":[],"sticky":"","inherit":true},"tagName":"div","displayLayout":{"type":"flex","columns":3,"shrinkColumns":true},"dimensions":{"widthType":"fill","fixedWidth":""},"queryContextIncludes":["collection"],"__privatePreviewState":{"isPreview":false,"previewMessage":"Les produits dépendront de la page consultée."},"align":"wide"} -->
+	<div class="wp-block-woocommerce-product-collection alignwide">
+		<!-- wp:woocommerce/product-template {"className":"smash-product-card"} -->
+		<!-- wp:group {"className":"smash-product-card__outer has-noir-border-color","style":{"border":{"width":"10px","color":"var:preset|color|noir"},"shadow":"var:preset|shadow|panel","spacing":{"padding":{"top":"var:preset|spacing|s","right":"var:preset|spacing|s","bottom":"var:preset|spacing|s","left":"var:preset|spacing|s"}}},"backgroundColor":"noir","layout":{"type":"constrained"}} -->
+		<div class="wp-block-group smash-product-card__outer has-noir-border-color has-border-color has-noir-background-color has-background"
+			style="border-color:var(--wp--preset--color--noir);border-width:10px;padding-top:var(--wp--preset--spacing--s);padding-right:var(--wp--preset--spacing--s);padding-bottom:var(--wp--preset--spacing--s);padding-left:var(--wp--preset--spacing--s);box-shadow:var(--wp--preset--shadow--panel)">
+			<!-- wp:group {"className":"smash-product-card__inner smash-product-card__bg","style":{"spacing":{"padding":{"top":"var:preset|spacing|l","right":"var:preset|spacing|l","bottom":"var:preset|spacing|l","left":"var:preset|spacing|l"}}},"textColor":"blanc","gradient":"product-hero-blue","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+			<div class="wp-block-group smash-product-card__inner smash-product-card__bg has-blanc-color has-product-hero-blue-gradient-background has-text-color has-background"
+				style="padding-top:var(--wp--preset--spacing--l);padding-right:var(--wp--preset--spacing--l);padding-bottom:var(--wp--preset--spacing--l);padding-left:var(--wp--preset--spacing--l)">
+				<!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":"42%"},"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
+				<div class="wp-block-group">
+					<!-- wp:woocommerce/product-image {"showSaleBadge":false,"imageSizing":"thumbnail","isDescendentOfQueryLoop":true} /-->
+				</div>
+				<!-- /wp:group -->
+
+				<!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":"50%"},"spacing":{"blockGap":"var:preset|spacing|m"}},"layout":{"type":"constrained"}} -->
+				<div class="wp-block-group">
+					<!-- wp:post-title {"level":3,"isLink":true,"style":{"typography":{"fontWeight":"800","lineHeight":"1","letterSpacing":"-0.02em"},"elements":{"link":{"color":{"text":"var:preset|color|blanc"}}},"spacing":{"margin":{"bottom":"var:preset|spacing|m"}}},"textColor":"blanc","fontSize":"xl","fontFamily":"roboto-condensed","__woocommerceNamespace":"woocommerce/product-collection/product-title"} /-->
+
+					<!-- wp:woocommerce/product-price {"isDescendentOfQueryLoop":true,"textColor":"blanc","fontSize":"l","style":{"typography":{"fontWeight":"800","lineHeight":"1","letterSpacing":"-0.02em"}}} /-->
+
+					<!-- wp:paragraph {"textColor":"blanc","fontSize":"xs"} -->
+					<p class="has-blanc-color has-text-color has-xs-font-size">prix TTC (+20%)</p>
+					<!-- /wp:paragraph -->
+
+					<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+					<div class="wp-block-group">
+						<!-- wp:woocommerce/product-button {"isDescendentOfQueryLoop":true,"backgroundColor":"jaune-orange","textColor":"noir","fontFamily":"roboto-condensed","fontSize":"m","style":{"border":{"radius":"0px","width":"4px","color":"var:preset|color|noir"},"shadow":"var:preset|shadow|button","typography":{"fontWeight":"800","textTransform":"uppercase"}}} /-->
+					</div>
+					<!-- /wp:group -->
+				</div>
+				<!-- /wp:group -->
+			</div>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:group -->
+		<!-- /wp:woocommerce/product-template -->
+	</div>
+	<!-- /wp:woocommerce/product-collection -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","theme":"Supersmashbros"} /-->

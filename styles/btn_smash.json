@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+  "version": 3,
+  "title": "Bouton Smash",
+  "slug": "smash",
+  "blockTypes": ["core/button"],
+  "styles": {
+    "color": {
+      "background": "var(--wp--preset--color--jaune-orange)",
+      "text": "var(--wp--preset--color--noir)"
+    },
+    "border": {
+      "color": "var(--wp--preset--color--noir)",
+      "width": "4px",
+      "style": "solid",
+      "radius": "0px"
+    },
+    "shadow": "var(--wp--preset--shadow--button)",
+    "spacing": {
+      "padding": {
+        "top": "0.9rem",
+        "right": "1.4rem",
+        "bottom": "0.9rem",
+        "left": "1.4rem"
+      }
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--roboto-condensed)",
+      "fontWeight": "900",
+      "fontSize": "var(--wp--preset--font-size--s)",
+      "letterSpacing": "0.02em",
+      "textTransform": "uppercase"
+    }
+  }
+}

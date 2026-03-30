@@ -1,0 +1,10 @@
+{
+    "$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+    "version": 3,
+    "title": "Bouton retour",
+    "slug": "btn-retour",
+    "blockTypes": ["core/button"],
+    "styles": {
+        "css": "&{clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%); background: #3B8686}"
+    }
+}

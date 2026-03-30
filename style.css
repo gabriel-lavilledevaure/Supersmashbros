@@ -1,0 +1,182 @@
+/*
+Theme Name: Supersmashbros
+Author: Gabriel Laville--Devaure
+Version: 1.0
+*/
+
+/* Assurer que le scroll fonctionne globalement */
+html,
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: auto;
+}
+
+.texte {
+  mix-blend-mode: multiply;
+}
+
+/* Correction pour le header cover */
+.wp-block-cover {
+  overflow: visible !important;
+  min-height: auto;
+}
+
+/* =========================
+   SECTION PRINCIPALE
+========================= */
+
+.section_main {
+  position: relative;
+  overflow: visible;
+}
+
+/* Lignes diagonales fond global */
+.section_main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.25;
+
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.25) 0px,
+    rgba(0, 0, 0, 0.25) 2px,
+    transparent 2px,
+    transparent 8px
+  );
+}
+
+/* Contenu au-dessus */
+.section_main > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================
+   CARDS PRODUITS
+========================= */
+
+/* ⚠️ adapte si besoin : .product / .wc-block-grid__product */
+.card,
+.product,
+.wc-block-grid__product {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Lignes dans les cards */
+.card::before,
+.product::before,
+.wc-block-grid__product::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.12;
+
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.25) 0px,
+    rgba(0, 0, 0, 0.25) 2px,
+    transparent 2px,
+    transparent 8px
+  );
+}
+
+/* Contenu des cards au-dessus */
+.card > *,
+.product > *,
+.wc-block-grid__product > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================
+   PANIER
+========================= */
+
+.btn_validation_de_commande {
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px;
+  text-align: center;
+  clip-path: polygon(5% 0, 95% 0, 100% 50%, 95% 100%, 5% 100%, 0 50%);
+}
+
+.btn_validation_de_commande::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  background: black;
+  z-index: -1;
+  clip-path: polygon(5% 0, 95% 0, 100% 50%, 95% 100%, 5% 100%, 0 50%);
+}
+
+/* --- Conteneur principal --- */
+.wc-block-cart-items__row {
+  background: linear-gradient(135deg, #102e52 0%, #205fac 100%);
+  position: relative;
+  border: 5px solid #000000;
+
+  box-shadow: -8px -8px 0px #000000;
+  margin-bottom: 30px;
+  display: flex !important;
+  align-items: center;
+  padding: 15px;
+}
+
+/* Enlever les bordures par défaut du tableau WooCommerce */
+.wc-block-cart-items__row td {
+  border: none !important;
+  background: transparent !important;
+}
+
+/* --- Motif de rayures --- */
+.wc-block-cart-items__row::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.25) 0px,
+    rgba(0, 0, 0, 0.25) 2px,
+    transparent 2px,
+    transparent 8px
+  );
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* --- Garder le contenu au-dessus du fond rayé --- */
+.wc-block-cart-item__image,
+.wc-block-cart-item__product,
+.wc-block-cart-item__quantity,
+.wc-block-cart-item__total {
+  z-index: 1;
+  position: relative;
+}
+
+/* Titre du produit */
+.wc-block-components-product-name {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+/* Prix du produit */
+.wc-block-components-product-price {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.wc-block-cart-item__product,
+.wc-block-cart-item__total {
+  padding-left: 5rem !important;
+}
