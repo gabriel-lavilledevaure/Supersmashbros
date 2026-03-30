@@ -3,7 +3,6 @@ Theme Name: Supersmashbros
 Author: Gabriel Laville--Devaure
 Version: 1.0
 */
-
 /* Assurer que le scroll fonctionne globalement */
 html,
 body {
@@ -23,43 +22,9 @@ body {
 }
 
 /* =========================
-   SECTION PRINCIPALE
-========================= */
-
-.section_main {
-  position: relative;
-  overflow: visible;
-}
-
-/* Lignes diagonales fond global */
-.section_main::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  opacity: 0.25;
-
-  background: repeating-linear-gradient(
-    -45deg,
-    rgba(0, 0, 0, 0.25) 0px,
-    rgba(0, 0, 0, 0.25) 2px,
-    transparent 2px,
-    transparent 8px
-  );
-}
-
-/* Contenu au-dessus */
-.section_main > * {
-  position: relative;
-  z-index: 1;
-}
-
-/* =========================
    CARDS PRODUITS
 ========================= */
 
-/* ⚠️ adapte si besoin : .product / .wc-block-grid__product */
 .card,
 .product,
 .wc-block-grid__product {
@@ -116,7 +81,6 @@ body {
   clip-path: polygon(5% 0, 95% 0, 100% 50%, 95% 100%, 5% 100%, 0 50%);
 }
 
-/* --- Conteneur principal --- */
 .wc-block-cart-items__row {
   background: linear-gradient(135deg, #102e52 0%, #205fac 100%);
   position: relative;
@@ -129,13 +93,11 @@ body {
   padding: 15px;
 }
 
-/* Enlever les bordures par défaut du tableau WooCommerce */
 .wc-block-cart-items__row td {
   border: none !important;
   background: transparent !important;
 }
 
-/* --- Motif de rayures --- */
 .wc-block-cart-items__row::before {
   content: "";
   position: absolute;
@@ -155,7 +117,6 @@ body {
   pointer-events: none;
 }
 
-/* --- Garder le contenu au-dessus du fond rayé --- */
 .wc-block-cart-item__image,
 .wc-block-cart-item__product,
 .wc-block-cart-item__quantity,
@@ -164,13 +125,11 @@ body {
   position: relative;
 }
 
-/* Titre du produit */
 .wc-block-components-product-name {
   color: #ffffff !important;
   text-decoration: none;
 }
 
-/* Prix du produit */
 .wc-block-components-product-price {
   font-weight: bold;
   font-size: 1rem;
