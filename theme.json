@@ -52,7 +52,7 @@
       ]
     },
     "spacing": {
-      "blockGap": "1.5rem",
+      "blockGap": "0",
       "margin": true,
       "padding": true,
       "units": ["px", "%", "em", "rem", "vh", "vw"],
@@ -360,7 +360,7 @@
       "text": "var(--wp--preset--color--noir)"
     },
     "spacing": {
-      "blockGap": "1.5rem"
+      "blockGap": "0"
     },
     "typography": {
       "fontFamily": "var(--wp--preset--font-family--roboto)",
