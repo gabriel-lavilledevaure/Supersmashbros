@@ -23,9 +23,9 @@
 	</div>
 	<!-- /wp:group -->
 
-	<!-- wp:woocommerce/product-collection {"queryId":5,"query":{"woocommerceAttributes":[],"woocommerceStockStatus":["instock","outofstock","onbackorder"],"taxQuery":[],"isProductCollectionBlock":true,"perPage":9,"pages":0,"offset":0,"postType":"product","order":"asc","orderBy":"title","author":"","search":"","exclude":[],"sticky":"","inherit":true},"tagName":"div","displayLayout":{"type":"flex","columns":3,"shrinkColumns":true},"dimensions":{"widthType":"fill","fixedWidth":""},"queryContextIncludes":["collection"],"__privatePreviewState":{"isPreview":false,"previewMessage":"Les produits dépendront de la page consultée."},"align":"wide"} -->
+	<!-- wp:woocommerce/product-collection {"queryId":19,"query":{"woocommerceAttributes":[],"woocommerceStockStatus":["instock","outofstock","onbackorder"],"taxQuery":[],"isProductCollectionBlock":true,"perPage":9,"pages":0,"offset":0,"postType":"product","order":"asc","orderBy":"title","author":"","search":"","exclude":[],"sticky":"","inherit":true},"tagName":"div","displayLayout":{"type":"flex","columns":3,"shrinkColumns":true},"dimensions":{"widthType":"fill","fixedWidth":""},"queryContextIncludes":["collection"],"__privatePreviewState":{"isPreview":false,"previewMessage":"Les produits dépendront de la page consultée."},"align":"wide"} -->
 	<div class="wp-block-woocommerce-product-collection alignwide">
-		<!-- wp:woocommerce/product-template {"className":"smash-product-card","layout":{}} -->
+		<!-- wp:woocommerce/product-template {"className":"smash-product-card"} -->
 		<!-- wp:group {"className":"smash-product-card__outer has-noir-border-color","style":{"border":{"width":"3px"},"shadow":"var:preset|shadow|panel","spacing":{"padding":{"top":"var:preset|spacing|s","right":"var:preset|spacing|s","bottom":"var:preset|spacing|s","left":"var:preset|spacing|s"},"blockGap":"0"},"dimensions":{"minHeight":"0px"}},"backgroundColor":"noir","borderColor":"noir","layout":{"type":"constrained"}} -->
 		<div class="wp-block-group smash-product-card__outer has-noir-border-color has-border-color has-noir-background-color has-background"
 			style="border-width:3px;min-height:0px;padding-top:var(--wp--preset--spacing--s);padding-right:var(--wp--preset--spacing--s);padding-bottom:var(--wp--preset--spacing--s);padding-left:var(--wp--preset--spacing--s);box-shadow:var(--wp--preset--shadow--panel)">
@@ -73,7 +73,20 @@
 </div>
 <!-- /wp:group -->
 
-<iframe src="http://localhost/Mini_jeu/" width="100%" height="600" style="border:none;">
-</iframe>
+<!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|blanc"}}},"spacing":{"blockGap":"var:preset|spacing|xs"}},"textColor":"blanc","gradient":"section-main-diagonals","layout":{"type":"constrained"}} -->
+<div
+	class="wp-block-group has-blanc-color has-section-main-diagonals-gradient-background has-text-color has-background has-link-color">
+	<!-- wp:heading {"style":{"spacing":{"padding":{"right":"var:preset|spacing|l","left":"var:preset|spacing|l","top":"var:preset|spacing|xl","bottom":"0"}},"elements":{"link":{"color":{"text":"var:preset|color|blanc"}}}},"textColor":"blanc","fontSize":"3xl"} -->
+	<h2 class="wp-block-heading has-blanc-color has-text-color has-link-color has-3-xl-font-size"
+		style="padding-top:var(--wp--preset--spacing--xl);padding-right:var(--wp--preset--spacing--l);padding-bottom:0;padding-left:var(--wp--preset--spacing--l)">
+		JOUE ET GAGNE UNE RÉDUCTION ! </h2>
+	<!-- /wp:heading -->
+
+	<!-- wp:html -->
+	<iframe src="http://localhost/Mini_jeu/" width="100%" height="800" style="border:none;">
+	</iframe>
+	<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer","theme":"Supersmashbros","tagName":"div","align":"wide","className":"smash-product-card"} /-->
