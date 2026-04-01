@@ -84,7 +84,7 @@ body {
 .wc-block-cart-items__row {
   background: linear-gradient(135deg, #102e52 0%, #205fac 100%);
   position: relative;
-  border: 5px solid #000000;
+  /* border: 5px solid #000000; */
 
   box-shadow: -8px -8px 0px #000000;
   margin-bottom: 30px;
