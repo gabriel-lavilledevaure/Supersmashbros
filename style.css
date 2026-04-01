@@ -3,7 +3,7 @@ Theme Name: Supersmashbros
 Author: Gabriel Laville--Devaure
 Version: 1.0
 */
-/* Assurer que le scroll fonctionne globalement */
+
 html,
 body {
   overflow-x: hidden;

@@ -48,6 +48,11 @@
           "slug": "card-diagonals-blue",
           "name": "Lignes diagonales (cards)",
           "gradient": "repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 2px, transparent 2px, transparent 8px), linear-gradient(0deg, #0083F1 0%, #0083F1 100%)"
+        },
+        {
+          "slug": "card-diagonals-noir",
+          "name": "Lignes diagonales (cards)",
+          "gradient": "repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 0px, rgba(255, 255, 255, 0.1) 2px, transparent 2px, transparent 8px), linear-gradient(0deg, #000000 0%, #000000 100%)"
         }
       ]
     },
