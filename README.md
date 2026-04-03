@@ -196,7 +196,3 @@ Checklist QA minimale:
 - Ajouter une vraie logique JS dans `assets/js/app.js` (menu mobile, filtres produits, micro-interactions).
 - Structurer les styles CSS par composants (cards, header, checkout, compte, etc.) pour faciliter la maintenance.
 - Ajouter une section "contribution" si le theme devient collaboratif.
-
-## 13. Licence
-
-A definir selon votre contexte de diffusion (projet perso, scolaire, client, open source, etc.).
